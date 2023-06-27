@@ -1,0 +1,351 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300&display=swap');
+ 
+  @media all and (max-width:500px) { body { font-size: 18px;} 
+  .sezione {
+    width: 100%;
+  }
+    
+  }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3f3f3;
+    background: url(background.png);
+    background-repeat: no-repeat;
+    background-position:right top;
+    background-size:  680px;
+}
+
+    
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+nav a {
+
+    margin-left: 24px;
+}
+
+
+nav {
+    display: flex;
+    
+}
+
+a {
+    text-decoration:none;
+    color: black;
+    
+}
+.primary {
+    display: flex;
+    margin-top: 5%;
+    font-weight: bold;
+     padding: 10px 20px;
+     border: 1px solid #000;
+     border-radius: 20px;
+    opacity: 90%;
+     width: 200px;
+     justify-content: center;
+     margin-left: 25%;
+
+
+    
+ }
+
+.hero {
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    padding: 48px;
+    flex-direction: row;
+}
+.frase {
+  font-size: 22px;
+  margin-top: 10%; 
+  margin-right: 50%;
+}
+
+
+
+h1 {
+    font-size: 75px;
+    line-height: 66px;
+    font-weight: 400;
+    margin:0;
+   font-weight: bold;
+   margin-bottom: 5%;
+    
+} 
+
+h1 {
+    animation-name: comparsa;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+
+@keyframes comparsa {
+    from { opacity: 0%;}
+    to { opacity: 100%;}
+}
+
+h2 {
+ display: flex;
+ justify-content: center;
+ margin-top: 20%;
+ opacity: 70%;
+}
+
+h2 {
+    animation-name: accendispegni;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes accendispegni {
+    from { opacity: 40%;}
+    to { opacity: 100%;}
+}
+.Blobs {
+    display: flex;
+    flex-direction:row;
+    margin-top: 20%;
+    opacity: 70%;
+    size: 40%;
+}
+
+
+
+.blob1 {
+ background: url(Blobrosa.svg);
+ background-repeat: no-repeat;
+ width: 600px;
+ height: 480px;
+}
+
+.blob1 {
+    animation-name: Bolla;
+    animation-duration:5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+}
+.section.blob1 {
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes Bolla {
+        0% {
+          transform: translate(0, 0) scale(0.8) ; rotate:0deg;
+        }
+        50% {
+          transform: translate(50px, -50px) scale(1); rotate: 20deg;
+        }
+        100% {
+          transform: translate(0, 0) scale(1); rotate: 30deg;
+        }
+}
+
+
+
+ 
+
+
+.blob2 {
+ background: url(blobviola.svg);
+ background-repeat: no-repeat;
+ width: 600px;
+ height: 480px;
+ margin-top: 10%;
+ background-size: 320px;
+}
+.blob2 {
+    animation-name: Bolla2;
+    animation-duration:5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+}
+
+@keyframes Bolla2 {
+    0% {
+        transform: translate(0, 0) scale(0.6) ; rotate:0deg;
+      }
+      50% {
+        transform: translate(50px, 50px) scale(0.8); rotate: -20deg;
+      }
+      100% {
+        transform: translate(0, 0) scale(1); rotate: 30deg;
+      }
+}
+
+.blob3 {
+ background: url(blobceleste.svg);
+ background-repeat: no-repeat;
+ width: 70% ;
+ height: 360px;
+ margin-right: 20%;
+ margin-left: 0;
+
+ 
+}
+
+.blob3 {
+    animation-name: bolla3;
+    animation-duration:5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+
+
+}
+@keyframes bolla3 {
+    0% {
+        transform: translate(0, 0) scale(0.6) ; rotate:0deg;
+      }
+      50% {
+        transform: translate(50px, -50px) scale(0.8); rotate: -20deg;
+      }
+      100% {
+        transform: translate(0, 0) scale(1); rotate: 30deg;
+      }
+      
+
+}
+
+
+
+.cerchietto {
+    opacity: 70%;
+    position: fixed;
+    margin-left: 85% ;
+    margin-top: 25% ;
+
+    
+ }
+ .cerchietto {
+    animation-name: rotate ;
+    animation-duration: 3s;
+    animation-iteration-count:  infinite ;
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-delay: 5s;
+
+ }
+ @keyframes rotate {
+    from { rotate: 0deg ;
+
+    }
+    to { rotate: 180deg;
+
+    }
+ }
+
+.paragrafo {
+    display: flex;
+    margin-top: 25%;
+    margin-left: 13%;
+    font-weight: bold;
+    opacity: 0;
+    padding: 100px;
+}
+
+.paragrafo:active {
+    margin-top:10%;
+    margin-left: 5%;
+    font-weight: bold; 
+    opacity: 100%;
+    display: flex;
+    
+}
+
+
+
+
+h4 {
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.Blobs2 {
+    display: flex;
+    margin-top: -200px;
+    flex-direction: row;
+    opacity: 70%;
+}
+.bollanuova {
+    background: url(bolla.svg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 480px;
+    
+}
+.bollanuova {
+    animation-name:nuovatransazione;
+    animation-duration:5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+    
+}
+@keyframes nuovatransazione {
+    0% {
+        transform: translate(0, 0) scale(0.6) ; rotate:0deg;
+      }
+      50% {
+        transform: translate(50px, -50px) scale(0.8); rotate: -20deg;
+      }
+      100% {
+        transform: translate(0, 0) scale(1); rotate: 30deg;
+      }
+      
+
+}
+
+.blobcelestina {
+    background: url(blobcelestina.svg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 480px;
+}
+
+.blobcelestina {
+    animation-name:nuovatransazione;
+    animation-duration:5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease;
+}
+.paragrafo2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 13%;
+    font-weight: bold;
+    opacity: 0%;
+    padding: 100px;
+}
+
+.paragrafo2 :active {
+    margin-top:10%;
+    margin-left: 0;
+    font-weight: bold; 
+    opacity: 100%;
+    
+}
+.mail {
+    margin-left: 22px;
+    margin-bottom: 150px;
+}
+
